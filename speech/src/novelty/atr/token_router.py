@@ -2,7 +2,7 @@
 =============================================================================
 ATR — Adaptive Importance-Aware Dual Token Router
 =============================================================================
-SPEECH NOVELTY MODULE  (v2 — fully corrected)
+SPEECH NOVELTY MODULE  
 
   C) True sequence compression: routed_ids are physically packed without
      padding. The returned sequence is genuinely shorter — T' < T.
@@ -11,7 +11,6 @@ SPEECH NOVELTY MODULE  (v2 — fully corrected)
      compute savings under both standard and FlashAttention backends.
   D) emotion_id bottleneck: ATR now accepts optional whisper_features and
      calls dsacis.predict_emotion() directly if emotion_id is not provided.
-     This is documented clearly as a supported flow.
 
 What this module does:
     Given audio_ids (USToken sequence from USTokenizer) and the NLP
